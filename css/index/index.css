@@ -1,4 +1,3 @@
-
 @font-face
 {
     font-family: Name;
@@ -14,7 +13,13 @@
 @font-face
 {
     font-family: Box;
-    src: url("/resources/global/level.ttf")
+    src: url("/resources/global/label.ttf")
+}
+
+@font-face
+{
+    font-family: Quote;
+    src: url("/resources/global/england.ttf")
 }
 
 *
@@ -63,6 +68,11 @@ header
     background-color: #F8F8F8;
     width: 50vw;
     height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: Quote;
+    font-size: 2.125vw;
 }
 
 #personal-logo
@@ -86,7 +96,7 @@ main
     height: 100%;
     display: grid;
     grid-template-rows: 25vh 25vh;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
     justify-content: center;
     align-content: center;
     row-gap: 4vh;
@@ -102,54 +112,21 @@ main
     justify-items: flex-start;
     align-items: center;
     border: 8px double #333333;
-}
-
-#about-box
-{
     background-color: #F8F8F8;
     width: 20vw;
     height: 25vh;
     box-shadow: 10px 10px 55px 0px #A8A8A8;
 }
 
-#formal-education-box
+@keyframes drophover
 {
-    background-color: #F8F8F8;
-    width: 20vw;
-    height: 25vh;
-    box-shadow: 10px 10px 55px 0px #A8A8A8;
+    0% {box-shadow: 10px 10px 55px 0px #A8A8A8;}
+    100% {box-shadow: 10px 10px 200px 50px #A8A8A8;}
 }
 
-#informal-education-box
+.box:hover
 {
-    background-color: #F8F8F8;
-    width: 20vw;
-    height: 25vh;
-    box-shadow: 10px 10px 55px 0px #A8A8A8;
-}
-
-#journal
-{
-    background-color: #F8F8F8;
-    width: 20vw;
-    height: 25vh;
-    box-shadow: 10px 10px 55px 0px #A8A8A8;
-}
-
-#projects
-{
-    background-color: #F8F8F8;
-    width: 20vw;
-    height: 25vh;
-    box-shadow: 10px 10px 55px 0px #A8A8A8;
-}
-
-#resume
-{
-    background-color: #F8F8F8;
-    width: 20vw;
-    height: 25vh;
-    box-shadow: 10px 10px 55px 0px #A8A8A8;
+    animation: drophover 500ms linear forwards;
 }
 
 /*FOOTER STUFF*/
