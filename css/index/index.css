@@ -36,7 +36,7 @@ body
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 23vh 67vh 10vh;
+    grid-template-rows: 23vh 64vh 13vh;
 }
 
 /*HEADER STUFF*/
@@ -143,4 +143,10 @@ footer
     align-items: center;
     font-family: Footer;
     font-size: 1.5vw;
+}
+
+.icon
+{
+    height: 5vh;
+    margin-bottom: 1vh;
 }

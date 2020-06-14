@@ -22,6 +22,18 @@
     src: url("/resources/global/england.ttf")
 }
 
+@font-face
+{
+    font-family: Text;
+    src: url("/resources/global/photo.ttf")
+}
+
+@font-face
+{
+    font-family: Type;
+    src: url("/resources/global/travel.ttf")
+}
+
 *
 {
     box-sizing: border-box;
@@ -36,7 +48,7 @@ body
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 23vh 67vh 10vh;
+    grid-template-rows: 23vh 64vh 13vh;
 }
 
 /*HEADER STUFF*/
@@ -94,7 +106,127 @@ main
     background-color: #F8F8F8;
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-items: center;
+    overflow-y: auto;
 }
+
+#left-container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#school-container
+{
+    width: 80%;
+    height: 80%;
+    border: 8px double #333333;
+    display: grid;
+    align-items: center;
+}
+
+@keyframes drophover
+{
+    0% {box-shadow: 10px 10px 55px 0px #A8A8A8;}
+    100% {box-shadow: 10px 10px 200px 50px #A8A8A8;}
+}
+
+#school-container:hover
+{
+    animation: drophover 500ms linear forwards;
+}
+
+.school
+{
+    font-weight: normal;
+    font-family: Box;
+    color: #333333;
+    cursor: pointer;
+}
+
+#right-container
+{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#elementary-school
+{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: 1;
+}
+
+#middle-school
+{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    z-index: 2;
+}
+
+#high-school
+{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    z-index: 3;
+}
+
+#minor
+{
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    z-index: 4;
+}
+
+#bs
+{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    z-index: 5;
+}
+
+#ba
+{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    z-index: 6;
+}
+
+#ma
+{
+    width: 100%;
+    height: 100%;
+    background-color: maroon;
+    z-index: 7;
+}
+
+#phd
+{
+    width: 100%;
+    height: 100%;
+    background-color: forestgreen;
+    z-index: 8;
+}
+
+/*
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+*/
 
 /*FOOTER STUFF*/
 footer
@@ -104,9 +236,16 @@ footer
     height: 100%;
     box-shadow: 0px -10px 55px -30px #000000;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
     font-family: Footer;
     font-size: 1.5vw;
+    z-index: 2;
+}
+
+.icon
+{
+    height: 5vh;
+    margin-bottom: 1vh;
 }
