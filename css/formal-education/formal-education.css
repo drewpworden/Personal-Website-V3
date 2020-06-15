@@ -157,6 +157,9 @@ main
 {
     justify-items: center;
     overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 
 #temp-button
@@ -182,62 +185,6 @@ main
     font-family: Box;
     font-size: 2vw;
     color: #333333;
-}
-
-#elementary-school
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#middle-school
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#high-school
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#minor
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#bs
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#ba
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#ma
-{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#phd
-{
-    width: 100%;
-    height: 100%;
-    display: none;
 }
 
 /*
