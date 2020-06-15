@@ -1,3 +1,5 @@
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
 @font-face
 {
     font-family: Name;
@@ -20,12 +22,6 @@
 {
     font-family: Quote;
     src: url("/resources/global/england.ttf")
-}
-
-@font-face
-{
-    font-family: Text;
-    src: url("/resources/global/photo.ttf")
 }
 
 @font-face
@@ -128,6 +124,7 @@ main
     border: 8px double #333333;
     display: grid;
     align-items: center;
+    overflow-y: auto;
 }
 
 @keyframes drophover
@@ -151,74 +148,96 @@ main
 
 #right-container
 {
-    background-color: blue;
     width: 100%;
     height: 100%;
     overflow-y: auto;
+}
+
+.school-block
+{
+    justify-items: center;
+    overflow-y: auto;
+}
+
+#temp-button
+{
+    display: none;
+}
+
+#background
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: Type;
+    font-size: 2.5vw;
+}
+
+.topic-title
+{
+    font-weight: normal;
+    margin-top: 6vh;
+    font-family: Box;
+    font-size: 2vw;
+    color: #333333;
 }
 
 #elementary-school
 {
     width: 100%;
     height: 100%;
-    background-color: red;
-    z-index: 1;
+    display: none;
 }
 
 #middle-school
 {
     width: 100%;
     height: 100%;
-    background-color: blue;
-    z-index: 2;
+    display: none;
 }
 
 #high-school
 {
     width: 100%;
     height: 100%;
-    background-color: green;
-    z-index: 3;
+    display: none;
 }
 
 #minor
 {
     width: 100%;
     height: 100%;
-    background-color: purple;
-    z-index: 4;
+    display: none;
 }
 
 #bs
 {
     width: 100%;
     height: 100%;
-    background-color: orange;
-    z-index: 5;
+    display: none;
 }
 
 #ba
 {
     width: 100%;
     height: 100%;
-    background-color: pink;
-    z-index: 6;
+    display: none;
 }
 
 #ma
 {
     width: 100%;
     height: 100%;
-    background-color: maroon;
-    z-index: 7;
+    display: none;
 }
 
 #phd
 {
     width: 100%;
     height: 100%;
-    background-color: forestgreen;
-    z-index: 8;
+    display: none;
 }
 
 /*
