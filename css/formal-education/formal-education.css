@@ -155,12 +155,12 @@ main
 
 .school-block
 {
-    justify-items: center;
     overflow-y: auto;
     width: 100%;
     height: 100%;
     display: none;
 }
+
 
 #temp-button
 {

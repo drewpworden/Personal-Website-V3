@@ -1,5 +1,4 @@
 const buttons = document.querySelectorAll(".school")
-
 const blocks = document.querySelectorAll(".school-block")
 
 for (let i = 0; i < buttons.length; i++) {
